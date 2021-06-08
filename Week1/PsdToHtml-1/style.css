@@ -16,11 +16,11 @@ div.banner{
     background-image: url(images/banner.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    min-height: fit-content%;
+    min-height: fit-content;
     overflow: hidden;
 }
 
-/* Stackoverflow preview fix, please ignore */
+
 .navbar-nav {
     flex-direction: row;
 }
@@ -30,14 +30,14 @@ div.banner{
     padding-left: .5rem !important;
 }
   
-  /* Fixes dropdown menus placed on the right side */
+
 .ml-auto .dropdown-menu {
     left: auto !important;
     right: 0px;
 }
 
 .nav-container{
-    border-bottom: solid 0.009em white;
+    border-bottom: solid 0.009em rgba(255, 255, 255, 0.5);
 }
 
 div.banner .logo{
@@ -118,6 +118,9 @@ div.second-sec-box2{
 
 /*********** third section css ********/
 
+.img-fluid{
+    width: 100%;
+}
 .image-section{
     margin-bottom: 100px;
 }
@@ -125,6 +128,28 @@ div.second-sec-box2{
 .third-sec-img{
     margin-bottom:  25px !important;
 }
+
+.overlay-image{
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #e24819;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+.overlay-image:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
 
 
 /*********** fourth section css ********/
@@ -224,4 +249,88 @@ div.second-sec-box2{
     background-color: rgb(202, 82, 2);
     font-size: 1.2em;
     padding: 10px 40px;
+}
+
+
+/****** seventh section css *******/
+
+.seventh-section{
+    background: rgba(65, 74, 146, 0.8);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.seventh-section h4{
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.seventh-section p{
+    color: rgb(231, 227, 227);
+}
+
+.icon-holder-seventh{
+    display: flex;
+}
+
+
+.icon-17{
+    flex: 1;
+}
+
+.icon-27{
+    flex: ;
+}
+
+.icon-37{
+    flex: 1;
+}
+
+.fb-7{
+    color: rgb(233, 227, 227);
+    font-size: 1.3em;
+    border: solid 2px rgb(233, 227, 227);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 100px;
+   
+}
+
+
+.twitt-7{
+    color: rgb(233, 227, 227);
+    font-size: 1.3em;
+    border: solid 2px rgb(233, 227, 227);
+    border-radius: 5px;
+    padding: 10px 10px;
+   
+}
+
+.linked-7{
+    color: rgb(233, 227, 227);
+    font-size: 1.3em;
+    border: solid 2px rgb(233, 227, 227);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-right: 100px;
+}
+
+
+/****** eighth section css *******/
+
+.eighth-section{
+    background: rgba(43, 50, 104, 0.8);
+    text-align: center;
+}
+.foot-p1{
+    margin-top: 20px;
+    color: rgb(207, 207, 207);
+    margin-bottom: -10px;
+}
+
+.foot-p2{
+    margin-bottom: 20px;
+    color: rgb(207, 207, 207);
 }
